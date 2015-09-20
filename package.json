@@ -1,0 +1,30 @@
+{
+  "name": "first-mate-select-grammar",
+  "version": "1.0.0",
+  "description": "provides `registry.selectGrammar` for dependants that need it like highlghts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soldair/first-mate-select-grammar.git"
+  },
+  "keywords": [
+    "first-mate",
+    "grammar"
+  ],
+  "author": "Ryan Day <soldair@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soldair/first-mate-select-grammar/issues"
+  },
+  "homepage": "https://github.com/soldair/first-mate-select-grammar#readme",
+  "dependencies": {
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "first-mate": "^5.0.0",
+    "tape": "^4.2.0"
+  }
+}
