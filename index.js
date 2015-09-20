@@ -35,12 +35,12 @@ module.exports = function(){
 
       filePath = filePath||''
 
-      if (this.grammarOverrideForPath(filePath) === this.scopeName) {
+      if (this.grammarOverrideForPath(filePath) === grammar.scopeName) {
         return 2 + filePath.length
-      } else if (fileContents && this.matchesContents(fileContents)) {
+      } else if (fileContents && this.matchesContents(grammar, fileContents)) {
         return 1 + filePath.length
       } else {
-        return this.getPathScore(filePath);
+        return this.getPathScore(grammar, filePath);
       }
     },
     matchesContents:function(grammar,contents) {

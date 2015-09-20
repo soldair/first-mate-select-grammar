@@ -1,6 +1,6 @@
 {
   "name": "first-mate-select-grammar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "provides `registry.selectGrammar` for dependants that need it like highlghts.",
   "main": "index.js",
   "scripts": {
