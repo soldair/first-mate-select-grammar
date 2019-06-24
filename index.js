@@ -11,7 +11,7 @@ module.exports = function(){
   var grammarSelector = {
     selectGrammar:function(registry,filePath, fileContents) {
       var self = this
-      return _.max(registry.grammars, function(grammar) {
+      return _.maxBy(registry.grammars, function(grammar) {
         return self.getScore(grammar,filePath, fileContents);
       });
     },
@@ -97,4 +97,3 @@ module.exports = function(){
 
   return grammarSelector;
 }
-
